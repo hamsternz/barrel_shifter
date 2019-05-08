@@ -21,7 +21,7 @@ process(clk)
       if rising_edge(clk) then
 
            ---------------------------------------------------------------------------------------
-           -- Flip bits depending on shift direction, or flip depending on sign and sign extention
+           -- Reverse bits depending on shift direction, or flip depending on sign and sign extention
            ---------------------------------------------------------------------------------------
            if sign_extend = '1' then
               if data_in(data_in'high) = '1' then
@@ -62,7 +62,7 @@ process(clk)
           end case;
 
           ---------------------------------------------------------------------------------------
-          -- Flip bits depending on shift direction, or flip depending on sign and sign extention
+          -- Reverse bits depending on shift direction, or flip depending on sign and sign extention
           ---------------------------------------------------------------------------------------
           if sign_extend = '1' then
              if data_in(data_in'high) = '1' then
